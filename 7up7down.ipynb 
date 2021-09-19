@@ -1,0 +1,76 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "239e196b",
+   "metadata": {},
+   "source": [
+    "![title](\"download7.jpeg\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "5cabe589",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def Game_play():\n",
+    "    import random\n",
+    "    print(\"Welcome to the game : 7 UP AND 7 DOWN!\")\n",
+    "    x=int(input('By how much money you want to play?'))\n",
+    "    print(\"Amount:\", x)\n",
+    "    y=int(input('Your Number: '))\n",
+    "    z=random.randint(1,12)\n",
+    "    if (y and z)==7:\n",
+    "        print(\"You Won! You will receive double of Rs\", x*3)\n",
+    "    elif (y<7 and z<7):\n",
+    "        print(\"You Won! You will receive double of Rs\", x*2)\n",
+    "    elif (y>7 and z>7):\n",
+    "        print(\"You Won! You will receive double of Rs\", x*2)\n",
+    "    else :\n",
+    "        print(\"Sorry you lose your Rs.\", x)\n",
+    "    print(\"The correct number is\",z)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "562df222",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Game_play()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c70197f4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
